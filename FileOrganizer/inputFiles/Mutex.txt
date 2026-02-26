@@ -1,0 +1,13 @@
+What is a Mutex?
+
+A mutex (short for mutual exclusion) is a lock that ensures only one goroutine can access a shared resource at a time.
+
+Used to prevent race conditions when multiple goroutines read/write the same variable.
+
+Go provides sync.Mutex for this purpose.
+
+Think of it as a “do not disturb” sign for your shared variable:
+
+Lock it before modifying.
+
+Unlock it after done.

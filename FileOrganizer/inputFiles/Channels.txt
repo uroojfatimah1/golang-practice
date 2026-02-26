@@ -1,0 +1,16 @@
+A channel is a typed conduit through which goroutines can send and receive values safely.
+
+Declaration:
+
+ch := make(chan int)   // unbuffered channel
+ch := make(chan int, 3) // buffered channel with capacity 3
+
+Sending a value: ch <- 5
+
+Receiving a value: x := <- ch
+
+Channels are blocking by default:
+
+Sending blocks until another goroutine receives.
+
+Receiving blocks until a value is sent.

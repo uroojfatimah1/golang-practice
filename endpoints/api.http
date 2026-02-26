@@ -1,0 +1,47 @@
+### Home
+GET http://localhost:4000/
+
+### Get All Courses
+GET http://localhost:4000/courses
+Accept: application/json
+
+### Get Course By Id
+GET http://localhost:4000/course/1
+Accept: application/json
+
+### Get Invalid Course
+GET http://localhost:4000/course/999
+
+### Add Course
+POST http://localhost:4000/course
+Content-Type: application/json
+
+{
+  "courseId": "10",
+  "courseName": "Go",
+  "price": 150,
+  "author": {
+    "fullname": "Fatima",
+    "website": "example.com"
+  }
+}
+
+### Update Course
+PUT http://localhost:4000/course/1
+Content-Type: application/json
+
+{
+  "courseId": "1",
+  "courseName": "JS Updated",
+  "price": 200,
+  "author": {
+    "fullname": "John",
+    "website": "updated.com"
+  }
+}
+
+### Delete Course
+DELETE http://localhost:4000/course/10
+
+### Invalid Delete
+DELETE http://localhost:4000/course/1000

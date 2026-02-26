@@ -1,0 +1,9 @@
+Key Points
+
+mu.Lock() → enters critical section.
+
+mu.Unlock() → exits critical section.
+
+Always defer Unlock() after Lock() to avoid deadlocks.
+
+Use when multiple goroutines share mutable data (like slices, maps, counters).

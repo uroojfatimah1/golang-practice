@@ -1,0 +1,7 @@
+A race condition happens when two or more goroutines access the same variable concurrently, and at least one of them is writing.
+
+The final result depends on timing, which can be unpredictable.
+
+Race conditions lead to bugs that are very hard to reproduce.
+
+Think of it as two chefs trying to add ingredients to the same pot at the same time — the final taste may vary depending on who added what first.

@@ -1,0 +1,11 @@
+Deadlocks occur when goroutines are blocked forever on send/receive.
+
+To prevent deadlocks:
+
+Make sure there’s always a receiver for unbuffered channels.
+
+Use buffered channels wisely.
+
+Close channels when done.
+
+Use select for non-blocking operations.
